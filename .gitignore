@@ -1,0 +1,13 @@
+/node_modules
+/public/storage
+/public/hot
+/public/category_images
+/public/product_images
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+.env
+resources/lang/**/*.yml
