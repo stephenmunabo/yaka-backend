@@ -69,7 +69,7 @@ class ProductsController extends BaseController
 
     protected function save($item, Request $request)
     {
-        dd('test');
+        dd($request);
         $validator = $this->getValidator($request);
         if ($validator->passes()) {
             
