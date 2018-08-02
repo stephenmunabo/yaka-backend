@@ -18,7 +18,7 @@ class ProductsController extends BaseController
 
     protected function getIndexItems($data)
     {
-        dd('test');
+    
         if ($data != null) {
             $products = Product::policyScope()->
                 orderBy($this->orderBy, $this->orderByDir);
@@ -69,7 +69,7 @@ class ProductsController extends BaseController
 
     protected function save($item, Request $request)
     {
-
+        dd('test');
         $validator = $this->getValidator($request);
         if ($validator->passes()) {
             
