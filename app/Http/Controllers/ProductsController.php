@@ -69,7 +69,7 @@ class ProductsController extends BaseController
 
     protected function save($item, Request $request)
     {
-        dd($request);
+        
         $validator = $this->getValidator($request);
         if ($validator->passes()) {
             
@@ -88,6 +88,7 @@ class ProductsController extends BaseController
                     }
                 }
             }
+            dd($item);
             return redirect(route($this->base . '.index'));
         } else {
             $errors = $validator->messages();
