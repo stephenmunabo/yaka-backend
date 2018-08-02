@@ -88,7 +88,7 @@ class ProductsController extends BaseController
                     }
                 }
             }
-            dd($item);
+        
             return redirect(route($this->base . '.index'));
         } else {
             $errors = $validator->messages();
